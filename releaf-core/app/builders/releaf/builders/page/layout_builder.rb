@@ -102,7 +102,7 @@ class Releaf::Builders::Page::LayoutBuilder
   end
 
   def content_type
-    meta(content: 'text/html; charset=utf-8', 'http-equiv': 'Content-Type')
+    meta(content: 'text/html; charset=utf-8', 'http-equiv' => 'Content-Type')
   end
 
   def meta(options)
