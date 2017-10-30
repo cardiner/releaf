@@ -12,7 +12,7 @@ module Releaf::Core
 
     def self.scan
       list = {}
-
+      return list unless Rails.application.assets
       Rails.application.assets.each_file do|file|
         match = file.to_s.match(CONTROLLER_ASSET_PATTERN)
         if match
